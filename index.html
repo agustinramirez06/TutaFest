@@ -15,9 +15,24 @@
   <!-- CSS principal -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/modals.css" />
+  <link rel="stylesheet" href="css/loader.css" />
 </head>
 <body>
 
+  <div id="loader" class="loader-container">
+    <div class="shield-loader">
+      <img src="assets/social-escudo.png" alt="Cargando..." class="shield-image" />
+    </div>
+    <div class="loader-text">
+      <h1 class="loader-title">#TutaFest</h1>
+      <div class="loading-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+  
   <!-- 1. HEADER / PRESENTACIÓN -->
   <header class="hero">
     <h1 class="hero-title">
@@ -120,6 +135,7 @@
         </div>
 
       </div>
+      </section>
 
   <!-- 3. INFORMACIÓN DEL EVENTO -->
   <section class="event-info">
@@ -158,7 +174,7 @@
   <!-- 4. GALERÍA / CARRUSEL -->
   <section class="gallery">
     <div class="carousel">
-<div class="carousel-track">
+      <div class="carousel-track">
         <div class="carousel-item">
           <img src="assets/ceberio-mellis-chicos.jpg" alt="Ceberio Mellis Chicos" />
         </div>
@@ -184,25 +200,25 @@
           <img src="assets/sintetico2.jpg" alt="Sintetico 2" />
         </div>
         <div class="carousel-item">
-          <img src="assets/tuta-chulo-olga.jpg" alt="Tuta Chulo Olga" />
+          <img src="assets/tuta-perico.jpg" alt="Tuta Chulo Olga" />
         </div>
         <div class="carousel-item">
-          <img src="assets/tuta-cornejo-claudio.jpg" alt="Tuta Cornejo Claudio" />
+          <img src="assets/chicos.jpg" alt="Tuta Cornejo Claudio" />
         </div>
         <div class="carousel-item">
           <img src="assets/tuta-cornejo.jpg" alt="Tuta Cornejo" />
         </div>
         <div class="carousel-item">
-          <img src="assets/tuta-futbol.jpg" alt="Tuta Futbol" />
+          <img src="assets/chicos-escuela.jpg" alt="Tuta Futbol" />
         </div>
         <div class="carousel-item">
-          <img src="assets/tuta-gilberto-natalia.jpg" alt="Tuta Gilberto Natalia" />
+          <img src="assets/tuta-lasflores.jpg" alt="Tuta Gilberto Natalia" />
         </div>
         <div class="carousel-item">
           <img src="assets/tuta-gilberto.jpg" alt="Tuta Gilberto" />
         </div>
         <div class="carousel-item">
-          <img src="assets/tuta-jaimeChico.jpg" alt="Tuta Jaime Chico" />
+          <img src="assets/tuta-ceberio.jpg" alt="Tuta Jaime Chico" />
         </div>
         <div class="carousel-item">
           <img src="assets/tuta-lalo-futbol.jpg" alt="Tuta Lalo Futbol" />
@@ -223,10 +239,21 @@
           <img src="assets/tuta-tomas.jpg" alt="Tuta Tomas" />
         </div>
         
+         <div class="carousel-item">
+          <img src="assets/lalo-silvia.jpeg" alt="Lalo Silvia" />
+        </div>
+         <div class="carousel-item">
+          <img src="assets/marita.jpeg" alt="Marita" />
+        </div>
+       <div class="carousel-item">
+          <img src="assets/tia-mabel.JPG" alt="Tia Mabel" />
+        </div>
       </div>
 
       <div class="carousel-dots">
         <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -322,8 +349,8 @@
   <div class="modal-content">
     <div class="modal-icon">✓</div>
     <h3 class="modal-title">Tips y Notas</h3>
-    <p><strong>Tiempo de confirmacion:</strong> ¡ Confirmar asistencia antes del día 10 de enero Tene en cuenta que tu presencia es importante  y contamos con ella.</p>
-    <p><strong>Fotos:</strong> hemos creado un album compartido en google Fotos para que podamos recordar este momento especial, unete y sube tus fotos alli.</p>
+    <p><strong>Tiempo de confirmacion:</strong> ¡ Confirmar asistencia antes del día 10 de enero ! Tené en cuenta que tu presencia es importante  y contamos con ella.</p>
+    <p><strong>Galería de Fotos:</strong> hemos creado un álbum compartido en google Fotos para que podamos recordar este momento especial, unite y sube tus fotos alli.</p>
   </div>
 </div>
 
@@ -352,10 +379,39 @@
     <a href="https://photos.google.com/share/AF1QipOhGfUjilYJM76HkVcqjusvRXi68vLHaO9xTFzaFhCHwwUn6rN35CmskJdNdJTv6g?key=SWpUZVFhQUhoT2JFSmtoWjY1R216T3JUX2tYWDlB" target="_blank" class="detail-button">Ir a la Galería</a>
   </div>
 </div>
+
 <!-- ========= END MODALS ========= -->
 
-  <!-- JS principal -->
-  <script src="js/scripts.js"></script>
-  <script src="js/modals.js"></script>
+<!-- JS principal -->
+<script src="js/scripts.js"></script>
+<script src="js/modals.js"></script>
+<!-- Script para ocultar loader -->
+<script>
+  window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+      }, 1500);
+    });
+    </script>
+    <footer class="footer-min">
+          <div class="footer-content">
+            <p class="footer-text">© Creado Por Agustin Ramirez</p>
+            
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/agustinramirez06" target="_blank" rel="noopener noreferrer" class="social-icon" title="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/agustinramirez06" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/2241568193" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://github.com/agustinramirez06" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
